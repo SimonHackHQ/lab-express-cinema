@@ -11,9 +11,7 @@ const MONGO_URI = process.env.MONGODB_URI || "mongodb://0.0.0.0/lab-express-cine
 mongoose
   .connect(MONGO_URI)
   .then((x) => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
-
-    return Movies.deleteMany();  // Emptying the database
+    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);    
   })
   .then(() => {
     return Movies.create();
