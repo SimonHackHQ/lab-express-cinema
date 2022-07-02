@@ -1,0 +1,21 @@
+<div id="detailsCountain">
+    <img src="{{movie.image}}">
+    <div>
+        <a href="/movies">Go Back</a>
+        <h2>{{movie.title}}</h2>
+        <h3>{{movie.director}}</h3>
+        <b>Stars</b>
+        <ul>
+            {{#each movie.stars}}
+               <li><h4>{{this}}</h4></li>
+            {{/each}}
+        </ul>
+        <h4>{{movie.description}}</h4>
+
+        <h4>
+            {{#each movie.showtimes}}
+               {{this}} | 
+            {{/each}}
+        </h4>
+    </div>
+</div>

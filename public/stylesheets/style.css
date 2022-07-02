@@ -48,3 +48,12 @@ header{
   font-size: 14px;
   color: #00B7FF;
 }
+
+#detailsCountain{
+  display: flex;
+  gap: 30px;
+}
+
+#detailsCountain a{
+  color: #00B7FF;
+}
