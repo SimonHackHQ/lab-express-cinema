@@ -1,6 +1,6 @@
 const mongoose  = require("mongoose");
 const Movies    = require("../models/Movie.model");
-const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/lab-express-cinema";
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://0.0.0.0/lab-express-cinema";
 
 const movies = [
     {
